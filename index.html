@@ -22,51 +22,44 @@
     <!-- Home -->
     <!-- Find correct fonts on google -->
     <section id="home">
-      <div class="grid-container">
-        <div class="item logo-img">
-          <img src="./Assets/logo.png" alt="logo" />
-        </div>
-        <div class="item">
-          <p class="title">Hello, <span>I am Kentia!</span></p>
-        </div>
-        <div class="item">
-          <p class="sub-title">
-            I am a Software Engineer, currently pursuing my Master's degree at
-            Carnegie Mellon University Africa.
-          </p>
-        </div>
+      <div class="top-container">
+        <img class="logo-img" src="./Assets/logo.png" alt="logo" />
+        <h1>Hello, <span>I am Kentia!</span></h1>
+        <p class="intro">
+          I am a Software Engineer, currently pursuing my Master's degree at
+          Carnegie Mellon University Africa.
+        </p>
       </div>
     </section>
 
     <!-- Background -->
     <section id="background">
-      <div class="grid-container">
-        <div class="item">
-          <p class="title"><span>Background</span></p>
-        </div>
+      <div class="middle-container">
+        <h1><span>Background</span></h1>
 
-        <div class="grid-group">
-          <div class="column-item">
+        <div class="flex-container">
+          <div class="flex-item">
             <img src="./Assets/University.png" alt="university" />
-            <p class="title-1">Carnegie Mellon University, Africa</p>
-            <p class="sub-title-1">
-              Master of Science in Information Technology
-            </p>
-            <p class="sub-title-1">August 2022 - May 2024</p>
+            <h2>Carnegie Mellon University, Africa</h2>
+            <h3>
+              Master of Science in Information Technology <br />
+              <i>August 2022 - May 2024</i>
+            </h3>
           </div>
 
-          <div class="column-item">
+          <div class="flex-item">
             <img src="./Assets/University.png" alt="university" />
-            <p class="title-1">Shivaji University, India</p>
-            <p class="sub-title-1">Bachelor of science in Computer Science</p>
-            <p class="sub-title-1">July 2017 - March 2020</p>
+            <h2>Shivaji University, India</h2>
+            <h3>
+              Bachelor of science in Computer Science <br />
+              <i>July 2017 - March 2020</i>
+            </h3>
           </div>
 
-          <div class="column-item">
+          <div class="flex-item">
             <img src="./Assets/Internship.png" alt="university" />
-            <p class="title-1">Snark Health, Nairobi, Kenya</p>
-            <p class="sub-title-1">Internship</p>
-            <p class="sub-title-1">May - August 2023</p>
+            <h2>Snark Health, Kenya</h2>
+            <h3>Internship <br /><i>May - August 2023</i></h3>
           </div>
         </div>
       </div>
@@ -74,33 +67,28 @@
 
     <!-- Projects -->
     <section id="projects">
-      <div class="grid-container">
-        <div class="item">
-          <p class="title"><span>Projects</span></p>
-        </div>
-        <div class="item">
-          <p class="sub-title-1">Here are some projects I worked on :</p>
-        </div>
+      <div class="middle-container">
+        <h1><span>Projects</span></h1>
 
-        <div class="grid-group-1">
-          <div class="column-item">
+        <div class="flex-container">
+          <div class="flex-item">
             <img
               src="./Assets/Snark-Health.jpg"
               alt="Snark-Health"
-              height="400"
+              height="300px"
             />
-            <p class="title-1">Snark Health website</p>
+            <h2>
+              Healthcare website built around the Doctor-Patient relationship.
+            </h2>
           </div>
 
-          <div class="column-item">
+          <div class="flex-item">
             <img
               src="./Assets/Mangrove-app.png"
               alt="Mangrove app"
-              height="400"
+              height="300px"
             />
-            <p class="title-1">
-              Mobile app for agricultural product distributions
-            </p>
+            <h2>Mobile app for agricultural product distributions</h2>
           </div>
         </div>
       </div>
@@ -108,53 +96,31 @@
 
     <!-- About me -->
     <section id="about-me">
-      <div class="grid-container">
-        <div class="item">
-          <p class="title"><span>About me!</span></p>
-        </div>
-        <div class="grid-group-1">
-          <div class="column-item">
-            <p class="sub-title">
-              Aspiring software engineer, currently pursuing a Master’s degree
-              in Information Technology at Carnegie Mellon University Africa; I
-              am passionate about leveraging technology to solve complex
-              problems and create innovative solutions. My educational
-              background has provided me with a strong foundation in computer
-              programming, software development, algorithms, data structures,
-              and database management. I am seeking a challenging work
-              environment that will enable me to enhance my software engineering
-              skills.
-            </p>
-          </div>
-          <div class="column-item">
-            <img
-                class="photo"
-              src="./Assets/P1079473.jpg"
-              height="500"
-              width="500"
-              alt="photo"
-            />
-          </div>
+      <div class="middle-container">
+        <h1 class="title"><span>About me!</span></h1>
+        <div class="clearfix">
+          <img class="photo" src="./Assets/P1079473.jpg" alt="photo" />
+          <p>
+            Aspiring software engineer, currently pursuing a Master’s degree in
+            Information Technology at Carnegie Mellon University Africa; I am
+            passionate about leveraging technology to solve complex problems and
+            create innovative solutions.
+          </p>
         </div>
       </div>
     </section>
 
     <!-- Contact me -->
     <section id="contact-me" class="brown">
-      <div class="grid-container">
-        <div class="item">
-          <p class="title white">Contact Me!</p>
+      <div class="bottom-container white">
+        <h1>Contact Me!</h1>
+        <div>
+          <img class="phone-logo" src="./Assets/Phone.png" alt="phone logo" />
+          <h3 class="mobile-no" >(+250) 791 904 040</h3>
         </div>
-        <div class="grid-group-1">
-          <div class="item" style="margin-bottom: 100px">
-            <img class="phone-logo" src="./Assets/Phone.png" alt="phone logo" />
-            <p class="sub-title-1 white">(+250) 791 904 040</p>
-          </div>
-
-          <div class="item" style="margin-bottom: 100px">
-            <img class="email-logo" src="./Assets/Email.png" alt="phone logo" />
-            <p class="sub-title-1 white">kishimwe@andrew.cmu.edu</p>
-          </div>
+        <div>
+          <img class="email-logo" src="./Assets/Email.png" alt="phone logo" />
+          <h3 class="email">kentiaishimwe70@gmail.com</h3>
         </div>
       </div>
     </section>
