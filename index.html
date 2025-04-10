@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Personal website</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,11 +25,16 @@
     <!-- Find correct fonts on google -->
     <section id="home">
       <div class="top-container">
-        <img class="logo-img" src="./Assets/logo.png" alt="logo" />
+        <img class="photo" src="./Assets/P1079473.jpg" alt="photo" />
+
+        <!-- <img class="logo-img" src="./Assets/logo.png" alt="logo" /> -->
         <h1>Hello, <span>I am Kentia!</span></h1>
         <p class="intro">
-          I am a Software Engineer, currently pursuing my Master's degree at
-          Carnegie Mellon University Africa.
+          I am a passionate software engineer with experience in web
+          development, data analysis, and IT support, dedicated to building
+          innovative software solutions that address community and business
+          needs. I seek opportunities to contribute to projects that drive
+          meaningful and positive change in society.
         </p>
       </div>
     </section>
@@ -41,41 +48,49 @@
           <div class="flex-item">
             <img src="./Assets/University.png" alt="university" />
             <h2>Carnegie Mellon University, Africa</h2>
-            <h3>
+            <p>
               Master of Science in Information Technology <br />
               <i>August 2022 - May 2024</i>
-            </h3>
+            </p>
           </div>
 
           <div class="flex-item">
             <img src="./Assets/University.png" alt="university" />
             <h2>Shivaji University, India</h2>
-            <h3>
+            <p>
               Bachelor of science in Computer Science <br />
               <i>July 2017 - March 2020</i>
-            </h3>
+            </p>
           </div>
 
           <div class="flex-item">
             <img src="./Assets/Internship.png" alt="university" />
             <h2>Snark Health, Kenya</h2>
-            <h3>Internship <br /><i>May - August 2023</i></h3>
+            <p>Internship <br /><i>May - August 2023</i></p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-    <section id="projects">
+    <section id="projects" class="">
       <div class="middle-container">
         <h1><span>Projects</span></h1>
 
         <div class="flex-container">
           <div class="flex-item">
+            <img class="project-img" src="./Assets/ctm.png" alt="ctm-bdi" />
+
+            <h2>
+              CTM website (Organization focusing on sustainable development)
+            </h2>
+          </div>
+
+          <div class="flex-item">
             <img
+              class="project-img"
               src="./Assets/Snark-Health.jpg"
               alt="Snark-Health"
-              height="300px"
             />
             <h2>
               Healthcare website built around the Doctor-Patient relationship.
@@ -83,11 +98,13 @@
           </div>
 
           <div class="flex-item">
-            <img
-              src="./Assets/Mangrove-app.png"
-              alt="Mangrove app"
-              height="300px"
-            />
+            <div class="project-img-box">
+              <img
+                class="project-img"
+                src="./Assets/Mangrove-app.png"
+                alt="Mangrove app"
+              />
+            </div>
             <h2>Mobile app for agricultural product distributions</h2>
           </div>
         </div>
@@ -97,15 +114,21 @@
     <!-- About me -->
     <section id="about-me">
       <div class="middle-container">
-        <h1 class="title"><span>About me!</span></h1>
-        <div class="clearfix">
-          <img class="photo" src="./Assets/P1079473.jpg" alt="photo" />
-          <p>
-            Aspiring software engineer, currently pursuing a Master’s degree in
-            Information Technology at Carnegie Mellon University Africa; I am
-            passionate about leveraging technology to solve complex problems and
-            create innovative solutions.
-          </p>
+        <h1 class="title"><span>Interests and Hobbies</span></h1>
+        <div>
+          <ul class="grid interests">
+            <li>Volunteering in community-based projects</li>
+            <li>
+              <span class="number"></span> Reading books on personal and
+              christian growth
+            </li>
+            <li><span class="number"></span> Singing (I am a choir member)</li>
+            <li>
+              <span class="number"></span> Working out (aerobics and swimming)
+            </li>
+            <li><span class="number"></span> Learning new skills</li>
+            <li><span class="number"></span> Connecting with people</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -113,14 +136,14 @@
     <!-- Contact me -->
     <section id="contact-me" class="brown">
       <div class="bottom-container white">
-        <h1>Contact Me!</h1>
+        <h1>Contact</h1>
         <div>
           <img class="phone-logo" src="./Assets/Phone.png" alt="phone logo" />
-          <h3 class="mobile-no" >(+250) 791 904 040</h3>
+          <p class="mobile-no">(+250) 791 904 040</p>
         </div>
         <div>
           <img class="email-logo" src="./Assets/Email.png" alt="phone logo" />
-          <h3 class="email">kishimwe@andrew.cmu.edu</h3>
+          <p class="email">kentiaishimwe70@gmail.com</p>
         </div>
       </div>
     </section>
